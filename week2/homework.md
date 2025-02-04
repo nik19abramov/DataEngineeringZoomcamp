@@ -16,8 +16,6 @@
 - green_tripdata_04_2020.csv
 - green_tripdata_2020.csv
 
-file: "{{inputs.taxi}}_tripdata_{{inputs.year}}-{{inputs.month}}.csv"
-
 **Answer**: green_tripdata_2020-04.csv
 
 3. How many rows are there for the Yellow Taxi data for all CSV files in the year 2020?
