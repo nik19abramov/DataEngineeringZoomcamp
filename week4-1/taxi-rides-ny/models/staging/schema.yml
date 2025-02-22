@@ -2,8 +2,8 @@ version: 2
 
 sources:
   - name: staging
-    database: zoomcamp-airflow-444903
-    schema: zoomcamp
+    database: ny-rides-nikolay
+    schema: zoomcamp1
       # loaded_at_field: record_loaded_at
     tables:
       - name: green_tripdata
