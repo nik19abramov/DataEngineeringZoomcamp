@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: staging
     database: ny-rides-nikolay
-    schema: zoomcamp1
+    schema: dbt_nabramov
       # loaded_at_field: record_loaded_at
     tables:
       - name: green_tripdata
