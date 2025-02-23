@@ -1,3 +1,4 @@
+
 {{ config(materialized='table') }}
 
 
@@ -25,3 +26,4 @@ quarterly_growth AS (
     FROM quarterly_revenue
 )
 SELECT * FROM quarterly_growth
+

@@ -16,7 +16,7 @@ where 1=1
     and fare_amount > 0
     and trip_distance > 0
     and payment_type_description in ('Cash', 'Credit Card')
-    --and EXTRACT(YEAR FROM pickup_datetime) = 2020
-    --and EXTRACT(MONTH FROM pickup_datetime) = 4
+    and EXTRACT(YEAR FROM pickup_datetime) = 2020
+    and EXTRACT(MONTH FROM pickup_datetime) = 4
 
 
