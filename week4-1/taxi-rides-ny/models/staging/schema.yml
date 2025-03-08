@@ -2,16 +2,24 @@ version: 2
 
 sources:
   - name: staging
-    database: zoomcamp-airflow-444903
-    schema: zoomcamp
+    database: ny-rides-nikolay
+    schema: dbt_nabramov
       # loaded_at_field: record_loaded_at
     tables:
       - name: green_tripdata
       - name: yellow_tripdata
+      - name: fhv_tripdata
          # freshness:
            # error_after: {count: 6, period: hour}
 
 models:
+    - name: stg_fhv_tripdata
+      columns:
+        - name: dispatching_base_num
+        - name: pickup_locationid
+        - name: dropoff_locationid
+        - name: pickup_datetime
+        - name: dropoff_datetime
     - name: stg_green_tripdata
       description: >
         Trip made by green taxis, also known as boro taxis and street-hail liveries.
